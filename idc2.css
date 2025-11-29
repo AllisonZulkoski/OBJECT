@@ -78,6 +78,20 @@
     content: none; /* Disable the transparent box */
 }
 
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    display: inline-block; /* Ensure scaling works properly */
+    margin: 0 15px; /* Add spacing between items */
+    transition: transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.nav-bar a:hover {
+    transform: scale(1.25) translateX(10px); /* Make the text bigger and shift it slightly */
+    letter-spacing: 0.3em; /* Adjust spacing to match the scaling */
+    text-decoration: none; /* Ensure no underline appears on hover */
+}
+
 .white-space {
     height: 5000px; /* Reduce the page height by 2000px */
 }
@@ -89,7 +103,7 @@
     left: calc(5% - 20px); /* Move 10px more to the left */
     font-family: 'Butler', serif; /* Use Butler font */
     font-size: 6rem; /* Match the size of "Rein It In" */
-    color: #013220; /* Deep forest green */
+    color: #003366; /* Deep blue */
     font-style: italic; /* Italicize the text */
     font-weight: 200; /* Ultra light weight */
 }
@@ -166,7 +180,7 @@
     right: calc(5% - 20px); /* Position on the right side of the page */
     font-family: 'Butler', serif; /* Use the same font as the welcome text */
     font-size: 6rem; /* Match the size of the welcome text */
-    color: #013220; /* Deep forest green */
+    color: #003366; /* Deep blue*/
     font-style: italic; /* Italicize the text */
     font-weight: 200; /* Ultra light weight */
     text-align: right; /* Align the text to the right */
@@ -202,13 +216,26 @@
     gap: 40px; /* Maintain 40px of space between the boxes */
 }
 
+.aboutme-statement {
+    font-family: 'Playfair Display', serif; /* Match the font of IDC2 text */
+    font-size: 3.5rem; /* Restore the original size */
+    color: #808080; /* Medium gray */
+    text-align: left; /* Align the text to the left */
+    font-style: italic; /* Make the text italic */
+    position: relative; /* Position the text absolutely within the box */
+   
+    padding: 10px; /* Add padding inside the box */
+    overflow: hidden; /* Prevent text from overflowing */
+}
+
 .huhhh-text-box {
     font-family: 'Playfair Display', serif; /* Match the font of the mission statement */
-    font-size: 1.5rem; /* Match the font size */
-    color: #808080; /* Match the medium gray color */
+    font-size: 1.5rem; /* Restore the original size */
+    color: #b0b0b0; /* Lighter gray */
     text-align: left; /* Align the text to the left */
     font-style: italic; /* Make the text italic */
     position: relative; /* Ensure it flows naturally in the layout */
     padding: 10px; /* Add padding inside the box */
     overflow: hidden; /* Prevent text from overflowing */
+    margin-top: 20px;
 }
