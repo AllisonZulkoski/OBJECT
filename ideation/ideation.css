@@ -9,6 +9,23 @@
     object-position: center; /* Align the bottom of the image with the bottom of the container */
 }
 
+.full-screen-image:last-of-type {
+    margin-top: 1900px;
+    height: auto; /* Maintain natural height */
+    width: auto; /* Maintain natural width */
+    position: relative; /* Prevent cropping */
+    transform: scale(2); /* Increase size by 200% */
+    display: block; /* Ensure block-level behavior */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    opacity: 0; /* Start fully transparent */
+    transition: opacity 1s ease-in-out; /* Smooth fade-in effect */
+}
+
+.full-screen-image:last-of-type.visible {
+    opacity: 1; /* Fully visible when scrolled into view */
+}
+
 .centered-text {
     position: absolute;
     top: 50%; /* Center vertically */
@@ -76,4 +93,9 @@
     background-color: rgba(255, 255, 255, 0.2); /* Add semi-transparent white background */
     width: 100vw; /* Stretch across the entire screen */
     z-index: 1000; /* Ensure it stays on top */
+}
+
+body {
+    margin: 0; /* Remove default margins */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }

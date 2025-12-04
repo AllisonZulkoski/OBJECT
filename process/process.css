@@ -36,7 +36,6 @@
     font-style: italic; /* Make the text italic */
 }
 
-
 /* navigation bar */
 .nav-bar {
     position: fixed; /* Stick the nav-bar to the top */
@@ -79,3 +78,27 @@
     width: 100vw; /* Stretch across the entire screen */
     z-index: 1000; /* Ensure it stays on top */
 }
+
+.image-container {
+    height: auto; /* Adjust height dynamically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.additional-image,
+.text-box,
+.text-box-duplicate {
+    display: none; /* Remove these elements */
+}
+
+body {
+    margin: 0; /* Remove default margins */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.materials-heading {
+    display: none; /* Remove the "Materials" heading */
+}
+
